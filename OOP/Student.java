@@ -1,5 +1,5 @@
 public class Student extends User {
-    String matric_no = "bhu/22/04/05/0017";
+    String matric_no = "bhu/22/04/05/0094";
     String admission_no = "youarecorrect";
 
     String registerCourse() {
@@ -14,14 +14,14 @@ public class Student extends User {
         if (matric_no.equals("") || admission_no.equals("")) {
             return "Cannot check your result.";
         } else {
-            return "You got 8As, 2Bs and 1D";
+            return "You got 9As, 2Bs and 1C";
         }
     }
 
     public static void main(String[] args) {
         Student student = new Student();
-        student.name = "Ark Young";
-        student.password = "MrCoder";
+        student.name = "Udoh Blessing";
+        student.password = "sheis_baller";
         System.out.println(student.register());
         System.out.println(student.registerCourse());
         System.out.println(student.checkResults());
